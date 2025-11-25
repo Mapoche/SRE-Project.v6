@@ -1,0 +1,23 @@
+
+groups:
+  - name: user-alerts
+    rules:
+      - alert: LowUsersOnline
+        expr: users_online < 30
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Low number of users online"
+          description: "Users online dropped below 30 for more than 1 minute."
+
+      - alert: HighUsersOnline
+        expr: users_online > 80
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "High number of users online"
+          description: "Users online exceeded 80 for more than 1 minute."
+
+

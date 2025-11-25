@@ -1,0 +1,47 @@
+
+- name: Setup Flask-Prometheus App on Docker
+  hosts: local
+  gather_facts: false
+  collections:
+    - community.docker
+  tasks:
+    - name: Install Docker
+      homebrew:
+        name: docker
+        state: present
+
+    - name: Ensure packaging library is installed
+      pip:
+        name: packaging
+
+    - name: Install pip
+      homebrew:
+        name: python3
+        state: present
+
+    - name: Install Docker Python module
+      pip:
+        name: docker
+
+    - name: Build Docker image for Flask-Prometheus app
+      community.docker.docker_image:
+        name: flask-prometheus-app
+        build:
+          path: .
+        source: build
+      environment:
+        DOCKER_HOST: "unix://{{ lookup('env','HOME') }}/.colima/default/docker.sock"
+
+    - name: Run Flask-Prometheus container
+      community.docker.docker_container:
+        name: flask-prometheus-container
+        image: flask-prometheus-app:latest
+        state: started
+        ports:
+          - "8080:8080"
+          - "8000:8000"
+      environment:
+        DOCKER_HOST: "unix://{{ lookup('env','HOME') }}/.colima/default/docker.sock"
+
+
+

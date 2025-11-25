@@ -1,0 +1,16 @@
+
+---
+- name: Deploy Flask-Prometheus App to Kubernetes
+  hosts: local
+  gather_facts: false
+  tasks:
+    - name: Apply Deployment manifest
+      kubernetes.core.k8s:
+        state: present
+        src: deployment.yaml
+
+    - name: Apply Service manifest
+      kubernetes.core.k8s:
+        state: present
+        src: service.yaml
+
