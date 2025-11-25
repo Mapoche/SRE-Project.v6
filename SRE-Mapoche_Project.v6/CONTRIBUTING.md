@@ -1,6 +1,6 @@
-# Contributing to SRE-Mapoche_Project.v3
+# Contributing to SRE-Mapoche_Project.v6
 
-Thank you for your interest in contributing to SRE-Mapoche_Project.v3! We welcome contributions of all kinds — whether you're fixing bugs, adding new features, improving documentation, or suggesting ideas to make the project better.
+Thank you for your interest in contributing to SRE-Mapoche_Project.v6! We welcome contributions of all kinds — whether you're fixing bugs, adding new features, improving documentation, or suggesting ideas to make the project better.
 
 To get started, first fork the repository from https://github.com/Mapoche/SRE-Project.v6.git
  by clicking the “Fork” button in the top-right corner. Once forked, clone your fork locally using the command git clone https://github.com/your_username/SRE-Project.v6.git, and navigate into the project directory.
