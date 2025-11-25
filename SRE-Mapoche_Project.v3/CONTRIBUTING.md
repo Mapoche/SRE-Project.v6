@@ -2,8 +2,8 @@
 
 Thank you for your interest in contributing to SRE-Mapoche_Project.v3! We welcome contributions of all kinds — whether you're fixing bugs, adding new features, improving documentation, or suggesting ideas to make the project better.
 
-To get started, first fork the repository from https://github.com/Nate1988/SRE-website_status_performance-Academy.git
- by clicking the “Fork” button in the top-right corner. Once forked, clone your fork locally using the command git clone https://github.com/your-username/SRE-website_status_performance-Academy.git, and navigate into the project directory.
+To get started, first fork the repository from https://github.com/Mapoche/SRE-Project.v6.git
+ by clicking the “Fork” button in the top-right corner. Once forked, clone your fork locally using the command git clone https://github.com/your_username/SRE-Project.v6.git, and navigate into the project directory.
 
 Next, create a new branch for your changes by running git checkout -b feature/your-feature-name. This helps keep your work isolated and easier to review.
 
@@ -20,3 +20,5 @@ In terms of code style, we encourage you to use clear and descriptive variable n
 Finally, please be respectful and collaborative. We aim to foster a welcoming and inclusive environment where all contributors feel valued. Your contributions make Uptime Monitor stronger and more useful for everyone — thank you for being a part of it!
 
 Thank you for helping improve website status performance Application Project.
+
+~ Raccoon.
